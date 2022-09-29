@@ -44,5 +44,32 @@ public class ChatBot {
     public String goodbye() {
         return "It was nice talking with you! Have a great day! Sincerely, " + name;
     }
-}
+
+    // void method
+    // this calculates and prints teh approximate comparison of the users height to sun mingmings height
+    public void nbaPlayer(int height){
+        final int sunMingMingHeight = 8; // in feet (7'9 really)
+        int heightDifference = sunMingMingHeight - height;
+        if (heightDifference>1) {
+            System.out.println("The tallest professional basketball player, Sun Mingming is almost " + heightDifference + " feet taller than you.");
+        } else if (heightDifference==1){
+            System.out.println("The tallest professional basketball player, Sun Mingming is almost " + heightDifference + " foot taller than you.");
+        } else if (heightDifference<0){
+            System.out.println("You're taller than Sun Mingming, the tallest professional basketball player! WOW!!");
+        } else {
+            System.out.println("You're around the same height as Sun Mingming, the tallest professional basketball player! WOW!!");
+        }
+    }
+
+    // method that returns a variable
+    // this approximates the height of user and sun mingming combined
+    public int combinedHeight(int height){
+        final int sunMingMingHeight = 8; // in feet (7'9 really)
+        return sunMingMingHeight + height;
+    }
+
+    }
+
+
+
 
